@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>VideoTube</title>
   </head>
+  <script src="./scripts/script.js" type="module"></script>
   <body>
     <header class="header">
       <nav class="header__nav">
@@ -29,11 +30,26 @@
           </form>
         </div>
         <div>
-          <button class="all">Todos</button>
-          <button class="recipes">Resetas</button>
-          <button class="training">Entrenamiento</button>
-          <button class="programming">Programacion</button>
-          <button class="childish">Infantil</button>
+          <p>
+            <button id="button-all" class="all" type="button">Todos</button>
+          </p>
+          <p>
+            <button id="button-recipes" class="recipes">Recetas</button>
+          </p>
+          <p>
+            <button id="button-training" class="training">Entrenamiento</button>
+          </p>
+          <p>
+            <button id="button-programming" class="programming">
+              Programación
+            </button>
+          </p>
+          <p>
+            <button id="button-childish" class="childish">Infantil</button>
+          </p>
+          <p>
+            <button id="button-travel" class="Travel">Viajes</button>
+          </p>
         </div>
         <div id="masthead-skeleton-icons" slot="masthead-skeleton">
           <div class="masthead-skeleton-icon"></div>
@@ -41,73 +57,8 @@
       </nav>
     </header>
     <main class="main">
-      <section class="main_video">
-        <div class="iframe">
-          <iframe
-            src="https://www.youtube.com/embed/9U4LhNCjVPU"
-            title="El Chavo Animado (Capítulo 76) *La Casa del Árbol* (1/2) (NUEVO)"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/OSASr0-FUQk"
-            title="el juego  DEL CALAMAR en halloween   Desocupe masivo Squid Game"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/TYG2_iUr8XY"
-            title="Curso JavaScript: 46. Callbacks - #jonmircha"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/FOFPh_dAg6g"
-            title="Homero roba con un Parquimetro Los simpsons capitulos completos en español latino"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/YROXZU8oZU4"
-            title="Cuidate del hombre Coop + Truco o Golosina 🐈 Kid Vs. Kat 🐈 Niño Vs. Gato - WildBrain"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/iN0xYdgRAzk"
-            title="Formulario animado con HTML, CSS y Javascript"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/AUTqIj21X7g"
-            title="GAP: GLUTEOS, ABDOMEN, Y PIERNAS + BRAZOS"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/YYCQP5FKGsM"
-            title="ACTIVA TU CEREBRO AL 100 por ciento con este test de VELOCIDAD MENTAL"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/hV2x9wjJ3I8"
-            title="Si tienes pasta en casa, ¡haz esta deliciosa receta que a todos les encantará!"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/S5a3cCXvmGc"
-            title="15 PLANTAS QUE PUEDES CULTIVAR FÁCILMENTE EN TU PROPIA COCINA"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/l08CTff43k8"
-            title="Cómo cuidar las plantas   De manera correcta Desocupe Masivo"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/g2F5RO6vNSs"
-            title="Birria de Res FÁCIL | La Capital"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/Q5J6eImVS5g"
-            title="EL CABO DE LA VELA 🪁 PSICODÉLICO VIAJE en MOTO por LA GUAJIRA | Episodio 125 Vuelta al Mundo en Moto"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/5DaZXXbHI_U"
-            title="Arrays y Objetos en JavaScript en 15 Minutos"
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/uqkj7HQ7ids"
-            title="Curso Basico de CSS - 2. Selectores"
-          ></iframe>
-        </div>
-      </section>
+      <section class="main_video"></section>
     </main>
     <footer class="footer"></footer>
-
-    <script src="./scripts/script.js" type="module"></script>
   </body>
 </html>
