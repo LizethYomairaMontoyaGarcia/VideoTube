@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,45 +9,84 @@
 body {
     padding: 0 80px;
     font-family: 'Open Sans';
-    background-color: rgb(2, 2, 2);
+    background-color: rgb(6, 3, 36);
 }
 
 .header__nav {
-    display:block;
+    display: block;
     padding: 20px;
     justify-content: space-between;
     align-items: center;
 }
 
 .header__figure img {
-    width: 80px;
+    width: 50px;
     display: flexbox;
-}
-
-img {
     align-content: center;
     background-position: left;
+    align-content: center;
+
 }
-.main{
+
+.videotube {
+    font-family: "impact";
+    font-style: normal;
+    font-size: -webkit-xxx-large;
+    width: 200px;
+    height: 5px;
+
+}
+
+p {
+    display: inline-flex;
+    margin-block-end: 20px;
+    margin-inline-start: 15px;
+    margin-inline-end: 50px;
+    color: #fff;
+}
+
+figure {
+    display: flex;
+    margin-block-start: 3em;
+    margin-block-end: 3em;
+
+}
+
+.main {
     align-items: flex-start;
 }
 
-.iframe{
-    align-content:normal;
+.iframe {
+    align-content: normal;
     margin: 30px;
     padding: 10px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     display: block;
 }
 
 form {
     color: #fff;
     align-content: center;
+    display: block;
 }
 
+.button {
+    align-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px;
+    gap: 15px;
+    width: 10px;
+    height: 10px;
+}
+
+.main_video {
+    align-items: center;
+}
 
 @media screen and (max-width: 600px) {
-   .header__nav{
-    flex-direction: column;
-   }
+    .header__nav {
+        flex-direction: column;
+    }
 }

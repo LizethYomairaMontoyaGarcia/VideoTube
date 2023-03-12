@@ -68,9 +68,8 @@ function filteredVideoCategory(category) {
     categoryVideo("viajes");
     console.log("travel");
   } else {
-    console.log("else")
-   videoCharacters(containerVideo, videoTube);
-    
+    console.log("else");
+    videoCharacters(containerVideo, videoTube);
   }
 }
 
@@ -79,9 +78,8 @@ function categoryVideo(category) {
   videoTube.forEach((video) => {
     if (category == video.category) {
       console.log("El video es ", video);
-   listaVideos.push(video);
-   
+      listaVideos.push(video);
     }
   });
-videoCharacters(containerVideo, listaVideos);
+  videoCharacters(containerVideo, listaVideos);
 }
