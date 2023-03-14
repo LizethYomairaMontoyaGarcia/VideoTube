@@ -9,7 +9,7 @@
 body {
     padding: 0 80px;
     font-family: 'Open Sans';
-    background-color: rgb(6, 3, 36);
+  
 }
 
 .header__nav {
@@ -52,16 +52,23 @@ figure {
 
 }
 
-.main {
-    align-items: flex-start;
+iframe {
+    border: none;
+    border-radius: 20px;
+
 }
 
-.iframe {
-    align-content: normal;
-    margin: 30px;
+.container__video {
+    margin: 10px;
     padding: 10px;
-    box-sizing: border-box;
-    display: block;
+    border-radius: 20px;
+    width: 325px;
+    
+
+}
+
+.container__video:hover {
+   background-color: aqua;
 }
 
 form {
@@ -70,19 +77,24 @@ form {
     display: block;
 }
 
-.button {
+button {
     align-content: center;
     display: flex;
     align-items: center;
     flex-direction: row;
     padding: 5px;
     gap: 15px;
-    width: 10px;
-    height: 10px;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(138, 181, 193);
 }
 
 .main_video {
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+   
 }
 
 @media screen and (max-width: 600px) {
