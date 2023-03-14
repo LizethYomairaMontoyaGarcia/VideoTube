@@ -1,35 +1,35 @@
  export const videoTube = [
     {
       id: 1,
-      name: "El Chavo Animado (Capítulo 76) *La Casa del Árbol* (1/2) (NUEVO)",
+      name: "El Chavo Animado *La Casa del Árbol*",
       video: "https://www.youtube.com/embed/9U4LhNCjVPU",
       duration: "93 minutos",
       category:"infantil"
     },
     {
       id: 2,
-      name: "el juego  DEL CALAMAR en halloween   Desocupe masivo Squid Game",
+      name: "El juego  del CALAMAR en halloween *Desocupe masivo*",
       video: "https://www.youtube.com/embed/OSASr0-FUQk",
       duration: "93 minutos",
       category:"infantil"
     },
     {
       id: 3,
-      name: "Curso JavaScript: 46. Callbacks - #jonmircha",
+      name: "Curso JavaScript: Callbacks - #jonmircha",
       video: "https://www.youtube.com/embed/TYG2_iUr8XY",
       duration: "93 minutos",
       category:"programacion"
     },
     {
       id: 4,
-      name: "Homero roba con un Parquimetro Los simpsons capitulos completos en español latino",
+      name: "Homero roba con un Parquimetro *Los simpsons*",
       video: "https://www.youtube.com/embed/FOFPh_dAg6g",
       duration: "93 minutos",
       category:"infantil"
     },
     {
       id: 5,
-      name: "Cuidate del hombre Coop + Truco o Golosina 🐈 Kid Vs. Kat 🐈 Niño Vs. Gato - WildBrain",
+      name: "Cuidate del hombre Coop",
       video: "https://www.youtube.com/embed/YROXZU8oZU4",
       duration: "93 minutos",
       category:"infantil"
@@ -43,14 +43,14 @@
     },
     {
       id: 7,
-      name: "GAP: GLUTEOS, ABDOMEN, Y PIERNAS + BRAZOS",
+      name: " GLUTEOS, ABDOMEN,PIERNAS Y BRAZOS",
       video: "https://www.youtube.com/embed/AUTqIj21X7g",
       duration: "93 minutos",
       category:"entrenamiento"
     },
     {
       id: 8,
-      name: "ACTIVA TU CEREBRO AL 100 por ciento con este test de VELOCIDAD MENTAL",
+      name: "Activa tu celebro al 100% con este test de VELOCIDAD MENTAL",
       video: "https://www.youtube.com/embed/YYCQP5FKGsM",
       duration: "93 minutos",
       category:"entrenamiento"
@@ -71,21 +71,21 @@
     },
     {
       id: 11,
-      name: "Cómo cuidar las plantas   De manera correcta Desocupe Masivo",
+      name: "Cómo cuidar las plantas de manera correcta *Desocupe Masivo*",
       video: "https://www.youtube.com/embed/l08CTff43k8",
       duration: "93 minutos",
       category:"resetas"
     },
     {
       id: 12,
-      name: "Birria de Res FÁCIL | La Capital",
+      name: "Birria de Res | La Capital",
       video: "https://www.youtube.com/embed/g2F5RO6vNSs",
       duration: "93 minutos",
       category:"resetas"
     },
     {
       id: 13,
-      name: "EL CABO DE LA VELA 🪁 PSICODÉLICO VIAJE en MOTO por LA GUAJIRA | Episodio 125 Vuelta al Mundo en Moto",
+      name: "EL CABO DE LA VELA 🪁viaje en mot por la GUAJIRA",
       video: "https://www.youtube.com/embed/Q5J6eImVS5g",
       duration: "93 minutos",
       category:"viajes"
@@ -99,7 +99,7 @@
     },
     {
       id: 15,
-      name: "Curso Basico de CSS - 2. Selectores",
+      name: "Curso Basico de CSS, Selectores",
       video: "https://www.youtube.com/embed/uqkj7HQ7ids",
       duration: "93 minutos",
       category:"programacion."

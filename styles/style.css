@@ -9,6 +9,7 @@
 body {
     padding: 0 80px;
     font-family: 'Open Sans';
+    background-color:rosybrown;
   
 }
 
@@ -68,7 +69,7 @@ iframe {
 }
 
 .container__video:hover {
-   background-color: aqua;
+   background-color: rgb(91, 70, 97);
 }
 
 form {
@@ -86,7 +87,7 @@ button {
     gap: 15px;
     width: 100px;
     height: 20px;
-    background-color: rgb(138, 181, 193);
+    background-color: rgb(255, 255, 255);
 }
 
 .main_video {

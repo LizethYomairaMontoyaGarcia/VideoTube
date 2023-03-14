@@ -6,6 +6,7 @@ const idVideoTubeStg = JSON.parse(sessionStorage.getItem("idVideoTube")) || 0;
 const idVideoTube = Number(idVideoTubeStg);
 console.log(idVideoTube);
 
+
 //hacer la busqueda del video que le hemos dado click
 const video = videoTube.find(video =>video.id ==idVideoTube)
 console.log(video)
