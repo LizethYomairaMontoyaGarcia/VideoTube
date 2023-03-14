@@ -13,7 +13,7 @@ const videoCharacters = (container, videoList) => {
   //Recorremos el array
   videoList.forEach((video) => {
     container.innerHTML += `
-                <iframe src=${video.video} alt=${video.name}>`;
+                <iframe data-video="video" src=${video.video}?frameborder="0" alt=${video.name}>`;
   });
 };
 
@@ -83,3 +83,20 @@ function categoryVideo(category) {
   });
   videoCharacters(containerVideo, listaVideos);
 }
+
+
+
+
+
+//Vamos a escuchar el evento click sobre los videos
+document.addEventListener("click", (event) => {
+  console.log("estoy utilizando el evento ", event)
+  
+  const dataVideoTubeAttribute = event.target.getAttribute("data-video");
+  if (dataVideoTubeAttribute === "video") {
+    // console.log('Quiero ir a la página de detalles de este personaje');
+    const id = event.target.getAttribute("video");
+    sessionStorage.setItem("idVideoTube", JSON.stringify(id));
+    window.location.href = "./pages/details.html";
+  }
+});
