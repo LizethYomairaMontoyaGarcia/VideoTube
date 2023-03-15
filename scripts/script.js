@@ -6,7 +6,7 @@ console.log(videoTube);
 const containerVideo = document.querySelector(".main_video");
 console.log(containerVideo);
 
-//permite pintar los personajes dentro de un elemento contenedor
+//permite pintar los videos dentro de un elemento contenedor
 const videoCharacters = (container, videoList) => {
   //Vaciar el contenedor
   container.innerHTML = "";
@@ -94,8 +94,25 @@ document.addEventListener("click", (event) => {
   if (dataVideoTubeAttribute === "video") {
     // console.log('Quiero ir a la página de detalles de este personaje');
     const id = event.target.getAttribute("name");
-    
+
     sessionStorage.setItem("idVideoTube", JSON.stringify(id));
     window.location.href = "./pages/details.html";
   }
 });
+
+//incertar un nuevo video
+
+const linkVideo = [];
+
+const form = document.querySelector("formulario");
+console.log("formulario", form);
+const name = document.querySelector("name");
+console.log("nombre", name);
+const link = document.querySelector("link");
+console.log("link", link);
+
+function validate(event) {
+  event.preventDeFault();
+  linkVideo=[];
+  
+}

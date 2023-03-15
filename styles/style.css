@@ -7,7 +7,7 @@
 }
 
 body {
-    padding: 0 80px;
+    padding: 0 50px;
     font-family: 'Open Sans';
     background-color: rgb(0, 0, 0);
 
@@ -15,7 +15,6 @@ body {
 
 .header__nav {
     display: block;
-    padding: 20px;
     justify-content: space-between;
     align-items: center;
 }
@@ -28,7 +27,8 @@ body {
     align-content: center;
 
 }
-.header__figure{
+
+.header__figure {
     align-items: normal;
     display: flex;
 }
@@ -58,7 +58,6 @@ figure {
     display: flex;
     margin-block-start: 3em;
     margin-block-end: 3em;
-
 }
 
 iframe {
@@ -69,9 +68,8 @@ iframe {
 
 .container__video {
     margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    width: 325px;
+    border-radius: 15px;
+    width: 310px;
 }
 
 .container__video:hover {
@@ -81,12 +79,8 @@ iframe {
 .div__img__videoTube__form {
     align-items: center;
     display: flex;
-    justify-content: center;
-    padding-top: initial;
 }
-
 .input__barra {
-    padding: inherit;
     position: center;
     height: 40px;
     width: 400px;
@@ -96,6 +90,21 @@ iframe {
 .submit {
     height: 40px;
     width: 80px;
+}
+
+.header__list {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.header__list li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.header__list li a:hover {
+    font-weight: 800;
 }
 
 form {
@@ -114,9 +123,10 @@ button {
     font-size: 20px;
     flex-wrap: wrap;
 }
-.div__button{
+
+.div__button {
     display: flex;
-    
+
 }
 
 .main_video {
