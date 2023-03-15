@@ -1,33 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-body{
-    background-color: rgb(194, 204, 201);
-}
-
 * {
     margin: 2px;
     padding: 2px;
     box-sizing: border-box;
 }
 
-iframe{
+body {
+    background-color: rgb(0, 0, 0);
+    padding: 0 80px;
+    font-family: 'Open Sans';
+}
+
+iframe {
     display: flex;
     width: 800px;
     height: 500px;
     background-position: center;
     position: relative;
 }
-h1{
-    align-items: center;
-line-height: 100px;
-font: message-box;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 30px;
-display: flex;
 
+h1 {
+    align-items: center;
+    line-height: 100px;
+    font: message-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    display: flex;
 }
 
+.header__nav {
+    display: block;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.header__figure img {
+    width: 50px;
+    display: flexbox;
+    align-content: center;
+    background-position: left;
+    align-content: center;
+}
+.videotube {
+    font-family: "impact";
+    font-style: normal;
+    font-size: -webkit-xxx-large;
+    width: 200px;
+    height: 30px;
+}
+img {
+    border-radius: 20px;
+    overflow: auto;
+}
+p {
+    display: flex;
+    margin-block-end: 20px;
+    margin-inline-start: 15px;
+    margin-inline-end: 50px;
+    color: #fff;
+}
+figure {
+    display: flex;
+    margin-block-start: 3em;
+    margin-block-end: 3em;
+
+}
+.input__barra {
+    padding: inherit;
+    position: center;
+    height: 40px;
+    width: 400px;
+    align-content: center;
+}
+
+.submit {
+    height: 40px;
+    width: 80px;
+}
+
+form {
+    color: #fff;
+    align-content: center;
+    display: flex;
+}
+
+button {
+    background-color: rgb(196, 194, 192);
+    width: 150px;
+    height: 30px;
+    border-radius: 13px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+}
+.div__button{
+    display: flex;
+    
+}
+
+.main_video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+
+}
 @media screen and (max-width: 600px) {
     .header__nav {
         flex-direction: column;

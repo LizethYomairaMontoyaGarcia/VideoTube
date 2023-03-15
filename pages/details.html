@@ -1,17 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/details.css"/>
-</head>
-<body>
-<section>
-    <div id="iframe"> </div>
-    <h1 id="title"></h1>
-</section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VideoTube</title>
+    <link rel="stylesheet" href="../styles/details.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div>
+          <figure class="header__figure">
+            <img
+              clas="img"
+              src="https://t3.ftcdn.net/jpg/05/41/89/26/240_F_541892678_CPqG1azF3dtvgutZHQbfI2Q5UmA4pj7Y.jpg"
+              alt="Icono Degradado"
+            />
+            <p class="videotube">VideoTube</p>
+            <form class="form">
+              <input
+                class="input"
+                placeholder="Buscar video..."
+                type="text"
+                name="search"
+              />
+              <input class="submit" type="submit" />
+            </form>
+          </figure>
+        </div>
+        <div class="div__button">
+            <p>
+              <button id="button-all" class="all" type="button">Todos</button>
+            </p>
+            <p>
+              <button id="button-recipes" class="recipes">Recetas</button>
+            </p>
+            <p>
+              <button id="button-training" class="training">Entrenamiento</button>
+            </p>
+            <p>
+              <button id="button-programming" class="programming">
+                Programación
+              </button>
+            </p>
+            <p>
+              <button id="button-childish" class="childish">Infantil</button>
+            </p>
+            <p>
+              <button id="button-travel" class="Travel">Viajes</button>
+            </p>
+          </div>
+      </nav>
+    </header>
+    <main></main>
+    <section>
+      <div id="iframe"></div>
+      <h1 id="title"></h1>
+    </section>
     <script src="../scripts/details.js" type="module"></script>
-</body>
+  </body>
 </html>
