@@ -71,6 +71,7 @@ function filteredVideoCategory(category) {
     console.log("travel");
   } else {
     console.log("else");
+    debugger;
     videoCharacters(containerVideo, videoTube);
   }
 }
@@ -92,6 +93,7 @@ document.addEventListener("click", (event) => {
 
   const dataVideoTubeAttribute = event.target.getAttribute("data-video");
   if (dataVideoTubeAttribute === "video") {
+    debugger;
     // console.log('Quiero ir a la página de detalles de este personaje');
     const id = event.target.getAttribute("name");
 
@@ -100,30 +102,26 @@ document.addEventListener("click", (event) => {
   }
 });
 
-//incertar un nuevo video
-
-let linkVideo = [];
+//insertar un nuevo video
 
 const form = document.querySelector(".formulario");
 console.log("formulario", form);
-const link = document.querySelector(".link");
+const link = document.querySelector(".urlVideo");
 console.log("link", link);
 const name = document.querySelector(".name");
 console.log("nombre", name);
 
-function validate(event) {
-  console.log("holaa event");
-  //event.preventDeFault();
-  linkVideo = [];
-
+form.addEventListener("submit", validate);
+let linkVideo = [];
+function validate($event) {
+  console.log("holaa event".event);
+   //event.preventDeFault();
   if (link.value) {
-    linkVideo = linkVideo.concat("campo obligatorio");
     console.log(link);
   }
   if (name.value) {
-    linkVideo = linkVideo.concat("campo obligatorio");
-  } 
-  else {
+    console.log(name);
+  } else {
   }
+  return(false);
 }
-form.addEventListener("submit", validate);

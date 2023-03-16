@@ -10,7 +10,7 @@ export const videoTube = [
     name: "El juego  del CALAMAR en halloween *Desocupe masivo*",
     video: "https://www.youtube.com/embed/OSASr0-FUQk",
     category: "infantil",
-    
+
   },
   {
     id: 3,
