@@ -112,16 +112,21 @@ const link = document.querySelector(".urlVideo");
 console.log("link", link);
 const name = document.querySelector(".name");
 console.log("nombre", name);
+const enviar = document.querySelector(".enviar")
+console.log("nombre", enviar);
 
 
 
-form.addEventListener("submit", validate);
-function validate($event) {
-  console.log("holaa event".event);
-   //event.preventDeFault();
+function validate(evento) {
+  debugger;
+  console.log("holaa event",evento.preventDeFault());
+  debugger;
+   e.preventDeFault();
+   debugger;
   
 
 const identidadDeVideos = {
+
   id: 30,
   video:link.value,
   name:name.value,
@@ -141,4 +146,6 @@ console.log("identidad videos", identidadDeVideos);
 console.log("lista de videos", videoTube);
 debugger;
 }
+
+form.addEventListener("submit", validate);
  
