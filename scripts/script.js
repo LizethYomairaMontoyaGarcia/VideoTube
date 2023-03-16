@@ -104,6 +104,8 @@ document.addEventListener("click", (event) => {
 
 //insertar un nuevo video
 
+
+
 const form = document.querySelector(".formulario");
 console.log("formulario", form);
 const link = document.querySelector(".urlVideo");
@@ -111,11 +113,21 @@ console.log("link", link);
 const name = document.querySelector(".name");
 console.log("nombre", name);
 
+
+
 form.addEventListener("submit", validate);
-let linkVideo = [];
 function validate($event) {
   console.log("holaa event".event);
    //event.preventDeFault();
+  
+
+const identidadDeVideos = {
+  id: 30,
+  video:link.value,
+  name:name.value,
+  category:"pendiente"}
+
+
   if (link.value) {
     console.log(link);
   }
@@ -123,5 +135,10 @@ function validate($event) {
     console.log(name);
   } else {
   }
-  return(false);
+console.log("identidad videos", identidadDeVideos);
+
+  videoTube.push(identidadDeVideos);
+console.log("lista de videos", videoTube);
+debugger;
 }
+ 
