@@ -19,5 +19,5 @@ title.innerText = video.name;
 const iframe = document.getElementById("iframe");
 console.log(iframe)
 iframe.innerHTML =  `<article class="container__video" data-video="video"  name=${video.id} >
-<iframe data-video="video" name=${video.id} src=${video.video}frameborder="0"  alt=${video.video}>
+<iframe data-video="video" name=${video.id} src=${video.video}  alt=${video.video}>
 </article>`

@@ -102,17 +102,28 @@ document.addEventListener("click", (event) => {
 
 //incertar un nuevo video
 
-const linkVideo = [];
+let linkVideo = [];
 
-const form = document.querySelector("formulario");
+const form = document.querySelector(".formulario");
 console.log("formulario", form);
-const name = document.querySelector("name");
-console.log("nombre", name);
-const link = document.querySelector("link");
+const link = document.querySelector(".link");
 console.log("link", link);
+const name = document.querySelector(".name");
+console.log("nombre", name);
 
 function validate(event) {
-  event.preventDeFault();
-  linkVideo=[];
-  
+  console.log("holaa event");
+  //event.preventDeFault();
+  linkVideo = [];
+
+  if (link.value) {
+    linkVideo = linkVideo.concat("campo obligatorio");
+    console.log(link);
+  }
+  if (name.value) {
+    linkVideo = linkVideo.concat("campo obligatorio");
+  } 
+  else {
+  }
 }
+form.addEventListener("submit", validate);
