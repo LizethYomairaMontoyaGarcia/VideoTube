@@ -14,7 +14,7 @@ const videoCharacters = (container, videoList) => {
   videoList.forEach((video) => {
     container.innerHTML += `
     <article class="container__video" data-video="video"  name=${video.id} >
-    <iframe data-video="video" name=${video.id} src=${video.video}  alt=${video.name}>
+    <img class="imgs__video" data-video="video" name=${video.id} src=${video.img}  alt=${video.name}>
     </article>`;
   });
 };
@@ -32,11 +32,6 @@ buttonAll.addEventListener("click", () => {
 const buttonRecipes = document.getElementById(`button-recipes`);
 buttonRecipes.addEventListener("click", () => {
   filteredVideoCategory(buttonRecipes);
-});
-
-const buttonTraining = document.getElementById(`button-training`);
-buttonTraining.addEventListener("click", () => {
-  filteredVideoCategory(buttonTraining);
 });
 
 const buttonProgramming = document.getElementById(`button-programming`);
@@ -57,9 +52,6 @@ function filteredVideoCategory(category) {
   if (category == buttonRecipes) {
     categoryVideo("resetas");
     console.log("recipes");
-  } else if (category == buttonTraining) {
-    categoryVideo("entrenamiento");
-    console.log("training");
   } else if (category == buttonProgramming) {
     categoryVideo("programacion");
     console.log("programming");
@@ -71,7 +63,7 @@ function filteredVideoCategory(category) {
     console.log("travel");
   } else {
     console.log("else");
-    debugger;
+    //debugger;
     videoCharacters(containerVideo, videoTube);
   }
 }
@@ -93,7 +85,7 @@ document.addEventListener("click", (event) => {
 
   const dataVideoTubeAttribute = event.target.getAttribute("data-video");
   if (dataVideoTubeAttribute === "video") {
-    debugger;
+    //debugger;
     // console.log('Quiero ir a la página de detalles de este personaje');
     const id = event.target.getAttribute("name");
 
@@ -103,9 +95,6 @@ document.addEventListener("click", (event) => {
 });
 
 //insertar un nuevo video
-
-
-
 const form = document.querySelector(".formulario");
 console.log("formulario", form);
 const link = document.querySelector(".urlVideo");
@@ -115,23 +104,15 @@ console.log("nombre", name);
 const enviar = document.querySelector(".enviar")
 console.log("nombre", enviar);
 
-
-
-function validate(evento) {
-  debugger;
-  console.log("holaa event",evento.preventDeFault());
-  debugger;
-   e.preventDeFault();
-   debugger;
+function validate(event) {
+  //console.log("holaa event",event.preventDeFault());
+   //event.preventDeFault();
   
-
 const identidadDeVideos = {
-
   id: 30,
   video:link.value,
   name:name.value,
   category:"pendiente"}
-
 
   if (link.value) {
     console.log(link);
@@ -144,8 +125,9 @@ console.log("identidad videos", identidadDeVideos);
 
   videoTube.push(identidadDeVideos);
 console.log("lista de videos", videoTube);
-debugger;
-}
 
-form.addEventListener("submit", validate);
+videoCharacters(containerVideo ,videoTube);
+
+}
+enviar.addEventListener("click", validate);
  

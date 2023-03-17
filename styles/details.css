@@ -27,13 +27,17 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     display: flex;
+    color: #fff;
+    text-align: center;
+    margin-block-start: 0.83em;
+    margin-block-end:initial;
 }
 
 .header__nav {
     display: block;
     padding: 20px;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: revert;
+    align-items: revert;
 }
 
 .header__figure img {
@@ -80,7 +84,7 @@ figure {
     width: 80px;
 }
 
-form {
+.form {
     color: #fff;
     align-content: center;
     display: flex;

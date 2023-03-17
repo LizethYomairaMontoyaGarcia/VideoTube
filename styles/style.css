@@ -7,25 +7,24 @@
 }
 
 body {
-    padding: 0 50px;
+    padding: 0 90px;
     font-family: 'Open Sans';
     background-color: rgb(0, 0, 0);
 
 }
 
 .header__nav {
-    display: block;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
 }
 
 .header__figure img {
-    width: 50px;
-    display: flexbox;
+    width: 45px;
+    display: flex;
     align-content: center;
     background-position: left;
     align-content: center;
-
+    cursor: pointer;
 }
 
 .header__figure {
@@ -36,22 +35,28 @@ body {
 .videotube {
     font-family: "impact";
     font-style: normal;
-    font-size: -webkit-xxx-large;
-    width: 200px;
-    height: 30px;
+    font-size: 35px;
+    width: 130px;
+
 }
 
 img {
     border-radius: 20px;
     overflow: auto;
+    position: center;
+    height: 43px;
+    width: 500px;
+    align-content: center;
 }
 
 p {
     display: flex;
     margin-block-end: 20px;
     margin-inline-start: 15px;
-    margin-inline-end: 50px;
+    margin-inline-end: 60px;
     color: #fff;
+    position: center;
+
 }
 
 figure {
@@ -67,23 +72,20 @@ iframe {
 }
 
 .container__video {
-    margin: 10px;
+    margin: 2px;
     border-radius: 15px;
-    width: 310px;
-}
-
-.container__video:hover {
-    background-color: rgb(91, 70, 97);
+    width: 300px;
 }
 
 .div__img__videoTube__form {
     align-items: center;
     display: flex;
 }
+
 .input__barra {
     position: center;
     height: 40px;
-    width: 400px;
+    width: 500px;
     align-content: center;
 }
 
@@ -92,48 +94,46 @@ iframe {
     width: 80px;
 }
 
-.header__list {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-}
-
-.header__list li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-.header__list li a:hover {
-    font-weight: 800;
-}
-
 form {
     color: #fff;
     align-content: center;
     display: flex;
 }
 
-button {
-    background-color: rgb(196, 194, 192);
-    width: 150px;
-    height: 30px;
-    border-radius: 13px;
-    text-align: center;
-    display: inline-block;
-    font-size: 20px;
-    flex-wrap: wrap;
-}
-
 .div__button {
     display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+}
 
+button {
+    background-color: rgb(196, 194, 192);
+    width: 140px;
+    height: 28px;
+    border-radius: 10px;
+    display: flex;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: bold;
+    box-sizing: initial
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 
 .main_video {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: -5px;
 
+}
+.imgs__video{
+    width: 280px;
+    height: 130px;
 }
 
 @media screen and (max-width: 600px) {
