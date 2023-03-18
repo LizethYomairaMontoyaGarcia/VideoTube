@@ -14,8 +14,8 @@ body {
 
 iframe {
     display: flex;
-    width: 800px;
-    height: 500px;
+    width: 650px;
+    height: 350px;
     background-position: center;
     position: relative;
 }
@@ -30,52 +30,64 @@ h1 {
     color: #fff;
     text-align: center;
     margin-block-start: 0.83em;
-    margin-block-end:initial;
+    margin-block-end: initial;
 }
 
 .header__nav {
-    display: block;
-    padding: 20px;
-    justify-content: revert;
-    align-items: revert;
+    display: flex;
+    align-items: center;
 }
 
 .header__figure img {
-    width: 50px;
-    display: flexbox;
+    width: 45px;
+    display: flex;
     align-content: center;
     background-position: left;
     align-content: center;
+    cursor: pointer;
 }
+.header__figure {
+    align-items: normal;
+    display: flex;
+}
+
 .videotube {
     font-family: "impact";
     font-style: normal;
-    font-size: -webkit-xxx-large;
-    width: 200px;
-    height: 30px;
+    font-size: 35px;
+    width: 130px;
+
 }
+
 img {
     border-radius: 20px;
     overflow: auto;
+    position: center;
+    height: 43px;
+    width: 500px;
+    align-content: center;
 }
+
 p {
     display: flex;
     margin-block-end: 20px;
     margin-inline-start: 15px;
-    margin-inline-end: 50px;
+    margin-inline-end: 60px;
     color: #fff;
+    position: center;
+
 }
+
 figure {
     display: flex;
     margin-block-start: 3em;
     margin-block-end: 3em;
-
 }
+
 .input__barra {
-    padding: inherit;
     position: center;
     height: 40px;
-    width: 400px;
+    width: 500px;
     align-content: center;
 }
 
@@ -92,25 +104,37 @@ figure {
 
 button {
     background-color: rgb(196, 194, 192);
-    width: 150px;
-    height: 30px;
-    border-radius: 13px;
-    text-align: center;
-    display: inline-block;
-    font-size: 20px;
-}
-.div__button{
+    width: 140px;
+    height: 28px;
+    border-radius: 10px;
     display: flex;
-    
+    font-size: 20px;
+    font-family: inherit;
+
 }
 
+.div__button {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
 .main_video {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 10px;
+    gap: -5px;
 
 }
+
+.footer {
+    color: #fff;
+}
+
 @media screen and (max-width: 600px) {
     .header__nav {
         flex-direction: column;

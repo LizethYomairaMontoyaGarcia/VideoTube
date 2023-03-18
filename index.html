@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>VideoTube</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <script src="./scripts/script.js" type="module"></script>
   <body>
@@ -19,14 +24,13 @@
               alt="Icono Degradado"
             />
             <p class="videotube">VideoTube</p>
-            <form class="form">
-              <input
-                class="input__barra"
-                placeholder="Buscar video..."
-                type="text"
-                name="search"
-              />
-              <input class="submit" type="submit" />
+            <form class="search-video">
+              <input type="text" placeholder="Buscar"/>
+              <div class="actions">
+                <button type="submit">
+                  <span class="material-icons">search</span>
+                </button>
+              </div>
             </form>
           </figure>
         </div>
@@ -59,5 +63,9 @@
       </form>
       <section class="main_video"></section>
     </main>
+    <footer class="footer">
+      Hecho con ❤ por el curso FrontEnd Cohorte 4 <br />
+      Autor: Lizeth ntoya Gracia
+    </footer>
   </body>
 </html>

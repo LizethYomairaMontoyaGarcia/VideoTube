@@ -7,6 +7,7 @@
     <title>VideoTube</title>
     <link rel="stylesheet" href="../styles/details.css" />
   </head>
+  <script src="../scripts/details.js" type="module"></script>
   <body>
     <header class="header">
       <nav class="header__nav">
@@ -18,47 +19,38 @@
               alt="Icono Degradado"
             />
             <p class="videotube">VideoTube</p>
-            <form class="form" >
+            <form class="form">
               <input
-                class="input"
+                class="input__barra"
                 placeholder="Buscar video..."
                 type="text"
                 name="search"
               />
               <input class="submit" type="submit" />
             </form>
-            
           </figure>
         </div>
         <div class="div__button">
-            <p>
-              <button id="button-all" class="all" type="button">Todos</button>
-            </p>
-            <p>
-              <button id="button-recipes" class="recipes">Recetas</button>
-            </p>
-            <p>
-              <button id="button-training" class="training">Entrenamiento</button>
-            </p>
-            <p>
-              <button id="button-programming" class="programming">
-                Programación
-              </button>
-            </p>
-            <p>
-              <button id="button-childish" class="childish">Infantil</button>
-            </p>
-            <p>
-              <button id="button-travel" class="Travel">Viajes</button>
-            </p>
-          </div>
+          <button id="button-all" class="all" type="button">Todos</button>
+          <button id="button-recipes" class="recipes">Recetas</button>
+          <button id="button-training" class="training">Entrenamiento</button>
+          <button id="button-programming" class="programming">
+            Programación
+          </button>
+          <button id="button-childish" class="childish">Infantil</button>
+          <button id="button-travel" class="Travel">Viajes</button>
+        </div>
       </nav>
     </header>
-    <main></main>
-    <section>
-      <div id="iframe"></div>
-      <h1 id="title"></h1>
-    </section>
-    <script src="../scripts/details.js" type="module"></script>
+    <main>
+      <section>
+        <div id="iframe"></div>
+        <h1 id="title"></h1>
+      </section>
+    </main>
+    <footer class="footer">
+      Hecho con ❤ por el curso FrontEnd Cohorte 4 <br />
+      Autor: Lizeth ntoya Gracia
+    </footer>
   </body>
 </html>

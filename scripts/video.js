@@ -8,7 +8,7 @@ export const videoTube = [
   },
   {
     id: 2,
-    name: "El juego  del CALAMAR en halloween *Desocupe masivo*",
+    name: "El juego  del CALAMAR *Desocupe masivo*",
     video: "https://www.youtube.com/embed/OSASr0-FUQk",
     category: "infantil",
     img: "https://i.ytimg.com/vi/OSASr0-FUQk/maxresdefault.jpg",
@@ -43,14 +43,14 @@ export const videoTube = [
   },
   {
     id: 7,
-    name: "Si tienes pasta en casa, ¡haz esta deliciosa receta que a todos les encantará!",
+    name: "Si tienes pasta en casa, ¡haz esta deliciosa receta!",
     video: "https://www.youtube.com/embed/hV2x9wjJ3I8",
     category: "resetas",
     img: "https://i.ytimg.com/vi/hV2x9wjJ3I8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC5V-Y6MjKOV-Ytysgzvz42RrjM2A",
   },
   {
     id: 8,
-    name: "15 PLANTAS QUE PUEDES CULTIVAR FÁCILMENTE EN TU PROPIA COCINA",
+    name: "15 plantas que puedes cultivar facil en tu casa",
     video: "https://www.youtube.com/embed/S5a3cCXvmGc",
     category: "resetas",
     img: "https://i.ytimg.com/vi/S5a3cCXvmGc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDSW9LY58Qumo29N5YostAT2KctFA",

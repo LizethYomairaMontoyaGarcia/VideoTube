@@ -15,6 +15,7 @@ const videoCharacters = (container, videoList) => {
     container.innerHTML += `
     <article class="container__video" data-video="video"  name=${video.id} >
     <img class="imgs__video" data-video="video" name=${video.id} src=${video.img}  alt=${video.name}>
+    <h4 class="video__name" data-video='video' name=${video.id}>${video.name}</h4>
     </article>`;
   });
 };
@@ -94,6 +95,7 @@ document.addEventListener("click", (event) => {
   }
 });
 
+//FORMULARIO
 //insertar un nuevo video
 const form = document.querySelector(".formulario");
 console.log("formulario", form);
@@ -101,18 +103,20 @@ const link = document.querySelector(".urlVideo");
 console.log("link", link);
 const name = document.querySelector(".name");
 console.log("nombre", name);
-const enviar = document.querySelector(".enviar")
+const enviar = document.querySelector(".enviar");
 console.log("nombre", enviar);
 
 function validate(event) {
   //console.log("holaa event",event.preventDeFault());
-   //event.preventDeFault();
-  
-const identidadDeVideos = {
-  id: 30,
-  video:link.value,
-  name:name.value,
-  category:"pendiente"}
+  //event.preventDeFault();
+
+  //OBJETO
+  const identidadDeVideos = {
+    id: 30,
+    video: link.value,
+    name: name.value,
+    category: "pendiente",
+  };
 
   if (link.value) {
     console.log(link);
@@ -121,13 +125,66 @@ const identidadDeVideos = {
     console.log(name);
   } else {
   }
-console.log("identidad videos", identidadDeVideos);
+  console.log("identidad videos", identidadDeVideos);
 
   videoTube.push(identidadDeVideos);
-console.log("lista de videos", videoTube);
+  console.log("lista de videos", videoTube);
 
-videoCharacters(containerVideo ,videoTube);
-
+  videoCharacters(containerVideo, videoTube);
 }
 enviar.addEventListener("click", validate);
- 
+
+
+
+//busqueda de videos por nombres
+const filterByName = (termSearch, videoList) => {
+  const videoFiltrados = videoList.filter((video) =>
+    video.name.toLowerCase().includes(termSearch.toLowerCase())
+  );
+  const result = videoFiltrados.length
+    ? videoFiltrados
+    : videoList;
+
+  const resultBusque = videoFiltrados.length
+    ? false
+    : "No existe este video";
+
+  return {
+    resultSearch :result,
+    messageSearch : resultBusque,
+  };
+};
+
+
+const searchForm = document.querySelector(".search-video");
+
+searchForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  console.log(searchForm.children);
+
+  const formVideoTube = Array.from(searchForm.children);
+
+  const inputSearch = formVideoTube.find((item) => item.localName === "input");
+
+  console.log(inputSearch.value);
+
+  const searchTermVideoTube = inputSearch.value;
+
+  if (searchTermVideoTube) {
+
+    const searchResult = filterByName(searchTermVideoTube, videoTube);
+
+    console.log(searchResult);
+
+    videoCharacters(containerVideo, searchResult.resultSearch);
+
+    if (searchResult.messageSearch) {
+
+      Swal.fire("Oops!", searchResult.messageSearch, "error");
+    }
+  } else {
+
+    Swal.fire("Oops!", "No ingresaste un personaje", "error");
+  }
+});

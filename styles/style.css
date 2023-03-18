@@ -32,14 +32,6 @@ body {
     display: flex;
 }
 
-.videotube {
-    font-family: "impact";
-    font-style: normal;
-    font-size: 35px;
-    width: 130px;
-
-}
-
 img {
     border-radius: 20px;
     overflow: auto;
@@ -61,14 +53,8 @@ p {
 
 figure {
     display: flex;
-    margin-block-start: 3em;
-    margin-block-end: 3em;
-}
-
-iframe {
-    border: none;
-    border-radius: 20px;
-
+    margin-block-start: 1em;
+    margin-block-end: 2em;
 }
 
 .container__video {
@@ -82,27 +68,9 @@ iframe {
     display: flex;
 }
 
-.input__barra {
-    position: center;
-    height: 40px;
-    width: 500px;
-    align-content: center;
-}
-
-.submit {
-    height: 40px;
-    width: 80px;
-}
-
-form {
-    color: #fff;
-    align-content: center;
-    display: flex;
-}
-
 .div__button {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: flex-start;
 }
 
@@ -128,12 +96,82 @@ button {
 .main_video {
     display: flex;
     flex-wrap: wrap;
-    gap: -5px;
+
 
 }
-.imgs__video{
-    width: 280px;
-    height: 130px;
+
+article:hover {
+    overflow: hidden;
+    transform: scale(1.10);
+}
+
+.imgs__video {
+    width: 240px;
+    height: 140px;
+}
+
+h4 {
+    color: #fff;
+    align-items: center;
+
+}
+
+.footer {
+    color: #fff;
+}
+
+.search-video {
+    border: solid 1px #ccc;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 20px;
+    margin: auto;
+}
+
+.search-video:focus-within {
+    border: solid 1px #aaa;
+    box-shadow: 0px 2px 5px rgba(35, 35, 36, 0.2);
+}
+
+.search-video input {
+    border: none;
+    outline: none;
+    color: #ccc;
+    pad: 30px;
+    font-size: 19px;
+    flex: auto;
+}
+
+.search-video .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.search-video .actions button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.search-video .actions button:hover {
+    color: #2979e2;
+    text-decoration-color: #aaa;
+}
+
+.material-icons {
+    
+    font-weight: revert;
+    font-size: 30px;
+    letter-spacing: normal;
+    text-transform: none;
+    display: flex;
+    word-wrap: normal;
+    direction: ltr;
+   
 }
 
 @media screen and (max-width: 600px) {
