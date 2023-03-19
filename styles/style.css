@@ -12,14 +12,9 @@ body {
     background-color: rgb(0, 0, 0);
 
 }
-header{
-    display: flex;
-    flex-direction: column;
-}
 
 .header__nav {
     display: flex;
-
     flex-direction: column;
 
 }
@@ -69,8 +64,9 @@ img {
 }
 
 .div__img__videoTube__form {
-    align-items: center;
+    align-items: baseline;
     display: flex;
+    align-content: baseline;
 }
 
 .div__button {
@@ -95,9 +91,11 @@ img {
     gap: 15px;
 }
 
+/*imagenes par direecionar al video*/
 .main_video {
     display: flex;
     flex-wrap: wrap;
+    gap: 2px;
 }
 
 article {
@@ -124,6 +122,7 @@ h4 {
     font-weight: bold;
 }
 
+/*mensaje hecho con amor*/
 .footer {
     color: #fff;
 }
@@ -182,6 +181,8 @@ h4 {
 
 }
 
+
+/*formulario*/
 #openModal {
     display: flex;
     list-style: none;

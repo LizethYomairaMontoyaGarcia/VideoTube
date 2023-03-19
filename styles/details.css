@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
-    margin: 2px;
-    padding: 2px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(0, 0, 0);
-    padding: 0 80px;
+    padding: 10px;
     font-family: 'Open Sans';
+    background-color: rgb(3, 3, 3);
+
 }
 
 iframe {
     display: flex;
-    width: 650px;
+    width: 600px;
     height: 350px;
     background-position: center;
     position: relative;
@@ -35,7 +36,8 @@ h1 {
 
 .header__nav {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+
 }
 
 .header__figure img {
@@ -47,28 +49,15 @@ h1 {
     cursor: pointer;
 }
 .header__figure {
-    align-items: normal;
     display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 2em;
 }
 
 .videotube {
     font-family: "impact";
     font-style: normal;
     font-size: 35px;
-    width: 130px;
-
-}
-
-img {
-    border-radius: 20px;
-    overflow: auto;
-    position: center;
-    height: 43px;
-    width: 500px;
-    align-content: center;
-}
-
-p {
     display: flex;
     margin-block-end: 20px;
     margin-inline-start: 15px;
@@ -78,46 +67,43 @@ p {
 
 }
 
-figure {
+img {
     display: flex;
-    margin-block-start: 3em;
-    margin-block-end: 3em;
-}
-
-.input__barra {
+    border-radius: 20px;
+    overflow: auto;
     position: center;
-    height: 40px;
+    height: 43px;
     width: 500px;
-    align-content: center;
 }
 
-.submit {
-    height: 40px;
-    width: 80px;
+.container__video {
+    border-radius: 15px;
+    width: 250px;
+    align-items: center;
+    text-align: center;
 }
 
-.form {
-    color: #fff;
-    align-content: center;
+.div__img__videoTube__form {
+    align-items: baseline;
     display: flex;
-}
-
-button {
-    background-color: rgb(196, 194, 192);
-    width: 140px;
-    height: 28px;
-    border-radius: 10px;
-    display: flex;
-    font-size: 20px;
-    font-family: inherit;
-
+    align-content: baseline;
 }
 
 .div__button {
     display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
+    flex-direction: row;
+    justify-content: initial;
+    align-items: center;
+    padding: 10px 5px;
+    gap: 10px;
 }
+.div__button button{
+    border-radius: 5px;
+}
+.div__button button:hover{
+    background-color: #aaa;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -133,6 +119,99 @@ button {
 
 .footer {
     color: #fff;
+}
+
+
+.search-video {
+    border: solid 1px #a04c4c;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 20px;
+    margin: auto;
+}
+
+
+.search-video input {
+    border: none;
+    outline: none;
+    color: #ccc;
+    pad: 30px;
+    font-size: 19px;
+    flex: auto;
+}
+
+.search-video .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.search-video .actions button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.search-video .actions button:hover {
+    color: #2979e2;
+    text-decoration-color: #aaa;
+}
+
+.search-video {
+    border: solid 1px #ccc;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 20px;
+    margin: auto;
+}
+
+.search-video:focus-within {
+    border: solid 1px #aaa;
+    box-shadow: 0px 2px 5px rgba(35, 35, 36, 0.2);
+}
+
+.search-video input {
+    border: none;
+    outline: none;
+    color: #ccc;
+    pad: 30px;
+    font-size: 19px;
+    flex: auto;
+}
+
+.search-video .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.search-video .actions button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.search-video .actions button:hover {
+    color: #2979e2;
+    text-decoration-color: #aaa;
+}
+
+.actions {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 12px 32px;
+    gap: 10px;
+
+    width: 88px;
+    height: 40px;
+
 }
 
 @media screen and (max-width: 600px) {

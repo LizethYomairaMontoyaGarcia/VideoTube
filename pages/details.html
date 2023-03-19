@@ -5,42 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VideoTube</title>
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="../styles/details.css" />
   </head>
   <script src="../scripts/details.js" type="module"></script>
   <body>
     <header class="header">
       <nav class="header__nav">
-        <div>
-          <figure class="header__figure">
+        <div class="div__img__videoTube__form">
+          <div class="header__figure">
             <img
-              clas="img"
+              class="img"
               src="https://t3.ftcdn.net/jpg/05/41/89/26/240_F_541892678_CPqG1azF3dtvgutZHQbfI2Q5UmA4pj7Y.jpg"
               alt="Icono Degradado"
             />
             <p class="videotube">VideoTube</p>
-            <form class="form">
-              <input
-                class="input__barra"
-                placeholder="Buscar video..."
-                type="text"
-                name="search"
-              />
-              <input class="submit" type="submit" />
-            </form>
-          </figure>
-        </div>
-        <div class="div__button">
-          <button id="button-all" class="all" type="button">Todos</button>
-          <button id="button-recipes" class="recipes">Recetas</button>
-          <button id="button-training" class="training">Entrenamiento</button>
-          <button id="button-programming" class="programming">
-            Programación
-          </button>
-          <button id="button-childish" class="childish">Infantil</button>
-          <button id="button-travel" class="Travel">Viajes</button>
+          </div>
+
+          <form class="search-video">
+            <input type="text" placeholder="Buscar" />
+            <div class="actions">
+              <button type="submit">
+                <span class="material-icons">search</span>
+              </button>
+            </div>
+          </form>
+          
         </div>
       </nav>
+      <div class="div__button">
+        <button id="button-all" class="all" type="button">Todos</button>
+        <button id="button-recipes" class="recipes">Recetas</button>
+        <button id="button-programming" class="programming">
+          Programación
+        </button>
+        <button id="button-childish" class="childish">Infantil</button>
+        <button id="button-travel" class="Travel">Viajes</button>
+      </div>
     </header>
     <main>
       <section>
