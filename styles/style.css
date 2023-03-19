@@ -7,15 +7,21 @@
 }
 
 body {
-    padding: 0 90px;
+    padding: 10px;
     font-family: 'Open Sans';
     background-color: rgb(0, 0, 0);
 
 }
+header{
+    display: flex;
+    flex-direction: column;
+}
 
 .header__nav {
     display: flex;
-    align-items: center;
+
+    flex-direction: column;
+
 }
 
 .header__figure img {
@@ -28,20 +34,15 @@ body {
 }
 
 .header__figure {
-    align-items: normal;
     display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 2em;
 }
 
-img {
-    border-radius: 20px;
-    overflow: auto;
-    position: center;
-    height: 43px;
-    width: 500px;
-    align-content: center;
-}
-
-p {
+.videotube {
+    font-family: "impact";
+    font-style: normal;
+    font-size: 35px;
     display: flex;
     margin-block-end: 20px;
     margin-inline-start: 15px;
@@ -51,16 +52,20 @@ p {
 
 }
 
-figure {
+img {
     display: flex;
-    margin-block-start: 1em;
-    margin-block-end: 2em;
+    border-radius: 20px;
+    overflow: auto;
+    position: center;
+    height: 43px;
+    width: 500px;
 }
 
 .container__video {
-    margin: 2px;
     border-radius: 15px;
-    width: 300px;
+    width: 250px;
+    align-items: center;
+    text-align: center;
 }
 
 .div__img__videoTube__form {
@@ -75,21 +80,29 @@ figure {
     align-items: center;
     padding: 10px 5px;
     gap: 10px;
-    border-radius: 10px;
+}
+.div__button button{
+    border-radius: 5px;
+}
+.div__button button:hover{
+    background-color: #aaa;
 }
 
 .main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 25px;
+    align-items:  baseline;
+    gap: 15px;
 }
 
 .main_video {
     display: flex;
     flex-wrap: wrap;
+}
 
-
+article {
+    display: flex;
+    flex-direction: column;
 }
 
 article:hover {
@@ -105,7 +118,10 @@ article:hover {
 h4 {
     color: #fff;
     align-items: center;
-
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1.5em;
+    font-weight: bold;
 }
 
 .footer {
@@ -153,20 +169,127 @@ h4 {
     color: #2979e2;
     text-decoration-color: #aaa;
 }
-.actions{
-    display: flex;
-align-items: flex-start;
-flex-direction: row;
-padding: 12px 32px;
-gap: 10px;
 
-width: 88px;
-height: 40px;
+.actions {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 12px 32px;
+    gap: 10px;
+
+    width: 88px;
+    height: 40px;
 
 }
 
+#openModal {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none,
+}
+
+.modalDialog {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity: 3;
+    pointer-events: auto;
+}
+
+.modalDialog>div {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.close {
+    background: #606061;
+    color: cornsilk;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 12px;
+
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background: #00d9ff;
+}
+
+.enviar {
+    align-items: center;
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    font-weight: bolder;
+    font-family: cursive;
+    display: flex;
+    text-align: center;
+    background-color: cornsilk;
+    margin: 10px;
+    padding: 3px 9px;
+    border-width: 1px;
+}
+
+label {
+    text-align: center;
+    display: flex;
+    padding: 5px;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.urlVideo,
+.urlImg,
+.name {
+    display: flex;
+    width: 255px;
+    height: 25px;
+    border-radius: 15px;
+}
+
+.category {
+    display: flex;
+    width: 255px;
+    height: 25px;
+    border-radius: 15px;
+}
+
+
 @media screen and (max-width: 600px) {
-    .header__nav {
+
+    header,
+    .header__nav,
+    .div__img__videoTube__form {
         flex-direction: column;
     }
 }

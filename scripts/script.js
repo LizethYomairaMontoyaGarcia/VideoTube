@@ -205,7 +205,7 @@ searchForm.addEventListener("submit", (event) => {
       Swal.fire("Oops!", searchResult.messageSearch, "error");
     }
   } else {
-    Swal.fire("Oops!", "No ingresaste un personaje", "error");
+    Swal.fire("Oops!", "No ingresaste un video", "error");
   }
 });
 
