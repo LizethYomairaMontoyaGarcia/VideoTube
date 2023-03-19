@@ -70,20 +70,12 @@ figure {
 
 .div__button {
     display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-}
-
-button {
-    background-color: rgb(196, 194, 192);
-    width: 140px;
-    height: 28px;
+    flex-direction: row;
+    justify-content: initial;
+    align-items: center;
+    padding: 10px 5px;
+    gap: 10px;
     border-radius: 10px;
-    display: flex;
-    font-size: 20px;
-    font-family: inherit;
-    font-weight: bold;
-    box-sizing: initial
 }
 
 .main {
@@ -161,17 +153,16 @@ h4 {
     color: #2979e2;
     text-decoration-color: #aaa;
 }
-
-.material-icons {
-    
-    font-weight: revert;
-    font-size: 30px;
-    letter-spacing: normal;
-    text-transform: none;
+.actions{
     display: flex;
-    word-wrap: normal;
-    direction: ltr;
-   
+align-items: flex-start;
+flex-direction: row;
+padding: 12px 32px;
+gap: 10px;
+
+width: 88px;
+height: 40px;
+
 }
 
 @media screen and (max-width: 600px) {

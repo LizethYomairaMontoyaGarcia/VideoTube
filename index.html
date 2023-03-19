@@ -25,7 +25,7 @@
             />
             <p class="videotube">VideoTube</p>
             <form class="search-video">
-              <input type="text" placeholder="Buscar"/>
+              <input type="text" placeholder="Buscar" />
               <div class="actions">
                 <button type="submit">
                   <span class="material-icons">search</span>
@@ -51,14 +51,35 @@
           type="url"
           class="urlVideo"
           id="urlVideo"
-          placeholder="Insertar Video..."
+          placeholder="Link Video..."
+        />
+        <input
+          type="url"
+          id="urlImg"
+          class="urlImg"
+          placeholder="Link de la imagen..."
         />
         <input
           type="text"
-          id="form_name"
+          id="name"
           class="name"
           placeholder="Nombre del video..."
         />
+        <label
+          type="text"
+          id="category"
+          class="category"
+          placeholder="Categoria"
+          >Categoría</label
+        >
+        <select id="category">
+          <option value="opcion">Seleccione un opción</option>
+          <option value="recetas">Recetas</option>
+          <option value="programacion">Programación</option>
+          <option value="infantil">Infantil</option>
+          <option value="viajes">Viajes</option>
+        </select>
+
         <button id="save_form" type="button" class="enviar">Insertar</button>
       </form>
       <section class="main_video"></section>

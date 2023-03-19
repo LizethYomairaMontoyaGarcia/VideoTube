@@ -80,6 +80,8 @@ function categoryVideo(category) {
   videoCharacters(containerVideo, listaVideos);
 }
 
+
+
 //Vamos a escuchar el evento click sobre los videos
 document.addEventListener("click", (event) => {
   console.log("estoy utilizando el evento ", event);
@@ -95,6 +97,8 @@ document.addEventListener("click", (event) => {
   }
 });
 
+
+
 //FORMULARIO
 //insertar un nuevo video
 const form = document.querySelector(".formulario");
@@ -103,6 +107,10 @@ const link = document.querySelector(".urlVideo");
 console.log("link", link);
 const name = document.querySelector(".name");
 console.log("nombre", name);
+const img = document.querySelector(".urlImg");
+console.log("nombre", img);
+const category = document.querySelector(".category");
+console.log("nombre", category);
 const enviar = document.querySelector(".enviar");
 console.log("nombre", enviar);
 
@@ -115,7 +123,8 @@ function validate(event) {
     id: 30,
     video: link.value,
     name: name.value,
-    category: "pendiente",
+    img: img.value,
+    category: category.value,
   };
 
   if (link.value) {
@@ -123,6 +132,12 @@ function validate(event) {
   }
   if (name.value) {
     console.log(name);
+  }
+  if (img.value) {
+    console.log(img);
+  }
+  if (category.value) {
+    console.log(category);
   } else {
   }
   console.log("identidad videos", identidadDeVideos);
@@ -136,25 +151,22 @@ enviar.addEventListener("click", validate);
 
 
 
+
+
 //busqueda de videos por nombres
 const filterByName = (termSearch, videoList) => {
   const videoFiltrados = videoList.filter((video) =>
     video.name.toLowerCase().includes(termSearch.toLowerCase())
   );
-  const result = videoFiltrados.length
-    ? videoFiltrados
-    : videoList;
+  const result = videoFiltrados.length ? videoFiltrados : videoList;
 
-  const resultBusque = videoFiltrados.length
-    ? false
-    : "No existe este video";
+  const resultBusque = videoFiltrados.length ? false : "No existe este video";
 
   return {
-    resultSearch :result,
-    messageSearch : resultBusque,
+    resultSearch: result,
+    messageSearch: resultBusque,
   };
 };
-
 
 const searchForm = document.querySelector(".search-video");
 
@@ -172,7 +184,6 @@ searchForm.addEventListener("submit", (event) => {
   const searchTermVideoTube = inputSearch.value;
 
   if (searchTermVideoTube) {
-
     const searchResult = filterByName(searchTermVideoTube, videoTube);
 
     console.log(searchResult);
@@ -180,11 +191,12 @@ searchForm.addEventListener("submit", (event) => {
     videoCharacters(containerVideo, searchResult.resultSearch);
 
     if (searchResult.messageSearch) {
-
       Swal.fire("Oops!", searchResult.messageSearch, "error");
     }
   } else {
-
     Swal.fire("Oops!", "No ingresaste un personaje", "error");
   }
 });
+
+
+
