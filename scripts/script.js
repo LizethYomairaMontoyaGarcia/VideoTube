@@ -1,6 +1,13 @@
 // llamamos la carpeta de video.js
-import { videoTube } from "./video.js";
-console.log(videoTube);
+//importar videotube con otro nombre como tube
+import { videoTube as tube } from "./video.js";
+console.log(tube);
+
+//obtener de seciontorag la lista de videos que se inserto en el formulario y insertalo a la pantalla
+let videoTube = JSON.parse(sessionStorage.getItem("videoTube")) || tube;
+//actualizar videotube con lo que hay en sesionstorage
+
+
 
 //capturamos el contenedor
 const containerVideo = document.querySelector(".main_video");
@@ -93,6 +100,7 @@ document.addEventListener("click", (event) => {
     const id = event.target.getAttribute("name");
 
     sessionStorage.setItem("idVideoTube", JSON.stringify(id));
+    
     window.location.href = "./pages/details.html";
   }
 });
@@ -143,6 +151,9 @@ function validate(event) {
   console.log("identidad videos", identidadDeVideos);
 
   videoTube.push(identidadDeVideos);
+ 
+  sessionStorage.setItem("videoTube", JSON.stringify(videoTube));
+
   console.log("lista de videos", videoTube);
 
   videoCharacters(containerVideo, videoTube);
