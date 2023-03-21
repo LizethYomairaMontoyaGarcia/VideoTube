@@ -219,14 +219,21 @@ h4 {
     display: flex;
 }
 
-.video__enlistados .main_video{
+.video__enlistados .main_video {
     padding: 20px 70px;
 }
 
-.video__enlistados .section__iframe{
+.video__enlistados .section__iframe {
     padding: 20px 30px;
-    
+
 }
+
+.section__iframe{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
 @media screen and (max-width: 600px) {
 
     header,
@@ -236,13 +243,23 @@ h4 {
         flex-direction: column;
     }
 }
+
 @media screen and (max-width: 600px) {
 
     iframe,
-    .video__enlistados .section__iframe{
+    .video__enlistados .section__iframe {
         width: 250px;
         height: 140px;
-    
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .video__enlistados .section__iframe {
+        padding-left: 50px;
+       margin-bottom: 100px;
+
 
     }
 }
