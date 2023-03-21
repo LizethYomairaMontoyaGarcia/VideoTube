@@ -13,27 +13,6 @@ body {
 
 }
 
-iframe {
-    display: flex;
-    width: 600px;
-    height: 350px;
-    background-position: center;
-    position: relative;
-}
-
-h1 {
-    align-items: center;
-    line-height: 100px;
-    font: message-box;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    display: flex;
-    color: #fff;
-    text-align: center;
-    margin-block-start: 0.83em;
-    margin-block-end: initial;
-}
-
 .header__nav {
     display: flex;
     flex-direction: column;
@@ -48,10 +27,19 @@ h1 {
     align-content: center;
     cursor: pointer;
 }
+
 .header__figure {
     display: flex;
     margin-block-start: 1em;
     margin-block-end: 2em;
+}
+
+.div__img__videoTube__form {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+
 }
 
 .videotube {
@@ -64,7 +52,6 @@ h1 {
     margin-inline-end: 60px;
     color: #fff;
     position: center;
-
 }
 
 img {
@@ -76,54 +63,8 @@ img {
     width: 500px;
 }
 
-.container__video {
-    border-radius: 15px;
-    width: 250px;
-    align-items: center;
-    text-align: center;
-}
-
-.div__img__videoTube__form {
-    align-items: baseline;
-    display: flex;
-    align-content: baseline;
-}
-
-.div__button {
-    display: flex;
-    flex-direction: row;
-    justify-content: initial;
-    align-items: center;
-    padding: 10px 5px;
-    gap: 10px;
-}
-.div__button button{
-    border-radius: 5px;
-}
-.div__button button:hover{
-    background-color: #aaa;
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-}
-.main_video {
-    display: flex;
-    flex-wrap: wrap;
-    gap: -5px;
-
-}
-
-.footer {
-    color: #fff;
-}
-
-
 .search-video {
-    border: solid 1px #a04c4c;
+    border: solid 1px #ccc;
     border-radius: 30px;
     display: flex;
     flex-direction: row;
@@ -131,7 +72,6 @@ img {
     padding: 5px 20px;
     margin: auto;
 }
-
 
 .search-video input {
     border: none;
@@ -160,15 +100,7 @@ img {
     text-decoration-color: #aaa;
 }
 
-.search-video {
-    border: solid 1px #ccc;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px 20px;
-    margin: auto;
-}
+
 
 .search-video:focus-within {
     border: solid 1px #aaa;
@@ -202,6 +134,58 @@ img {
     text-decoration-color: #aaa;
 }
 
+.div__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    align-items: center;
+    padding: 10px 5px;
+    gap: 10px;
+}
+
+.div__button button {
+    border-radius: 5px;
+}
+
+.div__button button:hover {
+    background-color: #aaa;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+iframe {
+    display: flex;
+    width: 600px;
+    height: 450px;
+    background-position: center;
+    position: relative;
+
+}
+
+h1 {
+    align-items: center;
+    line-height: 100px;
+    font: message-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    display: flex;
+    color: #fff;
+    text-align: center;
+    margin-block-start: 0.83em;
+    margin-block-end: initial;
+}
+
+.footer {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
 .actions {
     display: flex;
     align-items: flex-start;
@@ -214,8 +198,51 @@ img {
 
 }
 
+.imgs__video {
+    width: 230px;
+    height: 140px;
+    position: relative;
+    display: flex;
+
+}
+
+h4 {
+    color: #fff;
+    align-items: center;
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1.5em;
+    font-weight: bold;
+}
+
+.video__enlistados {
+    display: flex;
+}
+
+.video__enlistados .main_video{
+    padding: 20px 70px;
+}
+
+.video__enlistados .section__iframe{
+    padding: 20px 30px;
+    
+}
 @media screen and (max-width: 600px) {
-    .header__nav {
+
+    header,
+    .header__nav,
+    .div__img__videoTube__form,
+    .video__enlistados {
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    iframe,
+    .video__enlistados .section__iframe{
+        width: 250px;
+        height: 140px;
+    
+
     }
 }
