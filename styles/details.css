@@ -60,7 +60,13 @@ img {
     overflow: auto;
     position: center;
     height: 43px;
-    width: 500px;
+    width: 600px;
+}
+.container__video {
+    border-radius: 15px;
+    width: 250px;
+    align-items: center;
+    text-align: center;
 }
 
 .search-video {
@@ -160,7 +166,7 @@ img {
 
 iframe {
     display: flex;
-    width: 600px;
+    width: 700px;
     height: 450px;
     background-position: center;
     position: relative;

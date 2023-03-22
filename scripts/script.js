@@ -125,10 +125,11 @@ console.log("nombre", enviar);
 function validate(event) {
   //console.log("holaa event",event.preventDeFault());
   //event.preventDeFault();
-
+console.log("aca el form",form);
+console.log("aca el link",link);
   //OBJETO
   const identidadDeVideos = {
-    id: 30,
+    id: videoTube.length+1,
     video: link.value,
     name: name.value,
     img: img.value,
